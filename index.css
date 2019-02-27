@@ -38,6 +38,10 @@ header ul{
     list-style: none;
 }
 
+header li{
+    display: inline-block;
+}
+
 header a{
     display: inline-block;
     height: 35px;
