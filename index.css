@@ -12,6 +12,10 @@ body{
     min-width: 400px;
 }
 
+a{
+    color: #ddd;
+}
+
 header{
     background: #000;
     width: 100%;
@@ -82,12 +86,16 @@ main{
     margin: 0;
 }
 
-#works ul{
+.item{
+    margin-top: 50px;
+}
+
+.item ul{
     list-style: none;
     padding: 0;
 }
 
-#works li a{
+.item li a{
     text-decoration: underline;
     color: #ddd;
 }
