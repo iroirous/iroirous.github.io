@@ -1,0 +1,109 @@
+html, body{
+    height: 100%;
+    background: #777;
+    background-image: url('./headerbg.jpg');
+    background-size: cover;
+    background-blend-mode: multiply;
+}
+
+body{
+    margin: 0;
+    min-width: 400px;
+}
+
+a{
+    color: #ddd;
+}
+
+header{
+    background: #000;
+    width: 100%;
+    padding: 0 10px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow:0px 0px 4px 2px #333;
+}
+
+header h1{
+    margin: 0;
+    color: #ddd;
+    height: 100%;
+    line-height: 100%;
+    font-weight: normal;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18pt;
+}
+
+header ul{
+    padding: 0;
+    margin: 0;
+    text-align: right;
+    list-style: none;
+}
+
+header li{
+    display: inline-block;
+}
+
+header a{
+    display: inline-block;
+    height: 35px;
+    padding: 10px;
+}
+
+header a:hover{
+    background: #444;
+    animation: fadeIn 0.5s ease;
+}
+
+header img{
+    height: 100%;
+}
+
+main{
+    padding: 15px;
+}
+
+#iroirous{
+    border-radius: 100px;
+    width: 200px;
+}
+
+#profile{
+    max-width: 700px;
+    background: rgba(0, 0, 0, 0.5);
+    color: #ddd;
+    margin: 15px auto;
+    padding: 15px;
+    border: 1px solid #777;
+    text-align: center;
+}
+
+#profile p{
+    margin: 0;
+}
+
+.item{
+    margin-top: 50px;
+}
+
+.item ul{
+    list-style: none;
+    padding: 0;
+}
+
+.item li a{
+    text-decoration: underline;
+    color: #ddd;
+}
+
+@keyframes fadeIn{
+    0%{
+        background: #000
+    }
+    100%{
+        background: #444;
+    }
+}
