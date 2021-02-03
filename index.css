@@ -7,195 +7,51 @@ html{
 
 body{
     margin: 0;
-    height: 100%;
-    background: lavender;
+    background: #444;
+    color: white;
+    text-align: center;
+    padding-bottom: 30px;
 }
 
 /*****************************
             Header
 ******************************/
-header{
-    height: 60px;
-    background: black;
-    color: #ddd;
-    line-height: 60px;
-    padding: 0 10px;
-}
-
-header h1{
-    margin: 0;
-    font-size: 150%;
-    float: left;
-    height: 100%;
-}
-
-header ul{
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    float: right;
-    height: 100%;
-}
-
-header ul li{
-    display: inline-block;
-    height: 100%;
-}
-
-header ul li a{
-    display: block;
-    width: 60px;
-    padding: 10px;
-    box-sizing: border-box;
-}
-
-header ul li:hover{
-    background: #777;
-    transition: background 0.5s;
-}
-
-header ul li img{
-    width: 100%;
+header {
+    margin-bottom: 50px;
 }
 
 /*****************************
-            Profile
+            profile
 ******************************/
-#profile{
-    height: 500px;
-    color: #ddd;
-    position: relative;
+#icon img {
+    width: 300px;
+    border-radius: 150px;
 }
 
-#profile a{
-    color: #ddd;
+#links ul {
+    padding: 0;
+    list-style: none;
 }
 
-#profile a:visited{
-    color: #aaa;
+#links a {
+    color: #ccc;
 }
 
-#profileContent{
-    height: 100%;
-    display: flex;
-    align-items: center;
-}
-
-#profileContent:before{
-    content: '';
-    display: block;
-    background: url('./headerbg.jpg');
-    background-size: cover;
-    height: 100%;
-    width: 100%;
-    filter: brightness(40%);
-    z-index: -1;
-    position: absolute;
-}
-
-#profileContent > div{
-    width: 50%;
-    text-align: center;
-}
-
-#iroirous{
-    border-radius: 50%;
-    width: 100%;
-    max-width: 300px;
-}
-
-.profilebox{
+.profilebox {
     margin-top: 50px;
 }
 
-.profilebox ul{
+#external {
+    padding: 0;
+    padding-top: 50px;
     list-style: none;
-    margin: 0;
-    padding: 0;
 }
 
-@media screen and (max-width: 700px){
-    #profile{
-        height: auto;
-    }
-
-    #profileContent{
-        display: block;
-        width: 100%;
-    }
-
-    #profileContent > div{
-        width: 100%;
-    }
-
-    #profileContent > div:first-child{
-        padding-top: 20px;
-    }
-
-    #profileContent > div:last-child{
-        padding-bottom: 20px;
-    }
-}
-
-/*********************************
-            abilities
-*********************************/
-#abilities{
-    padding: 15px 15px;
-}
-
-#abilities h2{
-    margin: 0 15px 15px 15px;
-    padding: 0;
-    text-align: center;
-   /* background: linear-gradient(to right, transparent, hsl(150, 40%, 80%) 25%, hsl(150, 40%, 80%) 75%, transparent); */
-    background: linear-gradient(transparent 60%, hsl(150, 40%, 60%) 60%);
-}
-
-#abilities-table{
-    display: flex;
-    justify-content: space-around;
-    box-sizing: border-box;
-}
-
-.table{
-    box-sizing: border-box;
+#external li {
     display: inline-block;
-    width: 100%;
-    padding: 0 15px;
+    margin: 0 15px;
 }
 
-.table table{
-    height: 500px;
-}
-
-.table table, .table td, table th{
-    border-collapse: collapse;
-    border: 1px solid green;
-}
-
-.table table{
-    width: 100%;
-}
-
-.table th{
-    background: hsl(150, 40%, 60%);
-    width: 35%;
-}
-
-.table td{
-    padding: 10px;
-    background: white;
-}
-
-.table td ul{
-    padding: 0;
-    margin: 0;
-    list-style: none;
-}
-
-@media screen and (max-width: 900px){
-    #abilities-table{
-        display: block;
-    }
+#external li img {
+    width: 64px;
 }
